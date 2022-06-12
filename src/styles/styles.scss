@@ -1,0 +1,46 @@
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1000px;
+$breakpoint-sp: 1200px;
+$breakpoint-lg: 1370px;
+
+:root {
+  --ecopass-primary-color: #00c8cd;
+  --ecopass-secondary-color: #00008c;
+  --ecopass-error-color: red;
+  --ecopass-disabled: gray;
+  --ecopass-navbar-background: #16006e;
+  --ecopass-navbar-popup-background: #dce6f0;
+}
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-sp) {
+      @content;
+    }
+  } @else if $media == sp {
+    @media (min-width: $breakpoint-sp) and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}
+
+@mixin special($media) {
+  @if $media == sp {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-sp) {
+      @content;
+    }
+  }
+}
