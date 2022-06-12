@@ -1,4 +1,4 @@
-.UI-CONTAINER-container {
+.ui-container-container {
   width: calc(100% - 10px);
   display: flex;
   flex-direction: row;
@@ -7,25 +7,25 @@
   padding: 0 5px;
 }
 @media (min-width: 1000px) {
-  .UI-CONTAINER-container {
+  .ui-container-container {
     padding: 0 0px;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .UI-CONTAINER-container {
+  .ui-container-container {
     padding: 0 0px;
     width: 100%;
   }
 }
 @media (min-width: 1370px) {
-  .UI-CONTAINER-container {
+  .ui-container-container {
     padding: 0 0px;
     width: 100%;
   }
 }
 
-.UI-CONTAINER-content {
+.ui-container-content {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -33,17 +33,17 @@
   justify-content: flex-start2;
 }
 @media (min-width: 1000px) {
-  .UI-CONTAINER-content {
+  .ui-container-content {
     width: 1000px;
   }
 }
 @media (min-width: 1200px) {
-  .UI-CONTAINER-content {
+  .ui-container-content {
     width: 1187px;
   }
 }
 @media (min-width: 1370px) {
-  .UI-CONTAINER-content {
+  .ui-container-content {
     width: 1310px;
   }
 }

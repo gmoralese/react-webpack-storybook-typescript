@@ -12,10 +12,10 @@ export default function Container({
 }: ContainerProps): JSX.Element {
   return (
     <div
-      className="UI-CONTAINER-container"
+      className="ui-container-container"
       style={{ backgroundColor: backgroundColor ? backgroundColor : "white" }}
     >
-      <div className="UI-CONTAINER-content">{children}</div>
+      <div className="ui-container-content">{children}</div>
     </div>
   );
 }
